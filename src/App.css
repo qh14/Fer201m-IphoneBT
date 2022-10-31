@@ -1,38 +1,150 @@
-.App {
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.42em;
+
+
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: table;
+  width: 100%;
+
+  height: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 1em;
   text-align: center;
+  color: #4DC3FA;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height: 1em;
+  padding-bottom: 2em;
+  color: #FB667A;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h2 a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FB667A;
+  text-decoration: none;
+}
+
+.blue {
+  color: #185875;
+}
+
+.yellow {
+  color: #FFF842;
+}
+
+.container th h1 {
+  font-weight: bold;
+  font-size: 1em;
+  text-align: left;
+  color: #185875;
+}
+
+.container td {
+  font-weight: normal;
+  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+  -moz-box-shadow: 0 2px 2px -2px #0E1119;
+  box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.container {
+  text-align: left;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  display: table;
+}
+
+.container td, .container th {
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+
+
+
+
+.container td:first-child {
+  color: #FB667A;
+}
+
+/* .container tr:hover {
+  background-color: #464A52;
+  -webkit-box-shadow: 0 6px 6px -6px #0E1119;
+  -moz-box-shadow: 0 6px 6px -6px #0E1119;
+  box-shadow: 0 6px 6px -6px #0E1119;
+} */
+
+@media (max-width: 800px) {
+
+  .container td:nth-child(4),
+  .container th:nth-child(4) {
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.input-text {
+  padding: 15px 10px;
+  margin: 0px 10px;
+  width: 20%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row {
+  width: 80%;
+  margin: 0 auto;
+  margin-left: 60%;
+  margin-top: 10px;
+}
+
+.input-submit {
+  margin: 10px 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: red;
+  background-color: aliceblue;
+}
+
+.errorstyle {
+  width: 80%;
+  margin: 0 auto;
+  color: red;
+}
+
+.footerclass {
+  position: sticky;
+
+  top: 100%;
+
+  background: #2c3e50;
+
+  text-align: center;
+
+  color: #fff;
+
+  padding: 1rem;
 }
